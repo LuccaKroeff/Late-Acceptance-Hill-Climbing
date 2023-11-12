@@ -1,0 +1,43 @@
+Solver command line: ['C:\\glpk-4.65\\w64\\glpsol.exe', '--tmlim', '1800', '--write', 'C:\\Users\\lucca\\AppData\\Local\\Temp\\tmptukqx0ob.glpk.raw', '--wglp', 'C:\\Users\\lucca\\AppData\\Local\\Temp\\tmp7u6845nw.glpk.glp', '--cpxlp', 'C:\\Users\\lucca\\AppData\\Local\\Temp\\tmpa2dv9v93.pyomo.lp']
+
+GLPSOL: GLPK LP/MIP Solver, v4.65
+Parameter(s) specified in the command line:
+ --tmlim 1800 --write C:\Users\lucca\AppData\Local\Temp\tmptukqx0ob.glpk.raw
+ --wglp C:\Users\lucca\AppData\Local\Temp\tmp7u6845nw.glpk.glp --cpxlp C:\Users\lucca\AppData\Local\Temp\tmpa2dv9v93.pyomo.lp
+Reading problem data from 'C:\Users\lucca\AppData\Local\Temp\tmpa2dv9v93.pyomo.lp'...
+C:\Users\lucca\AppData\Local\Temp\tmpa2dv9v93.pyomo.lp:1811: warning: lower bound of variable 'x8' redefined
+C:\Users\lucca\AppData\Local\Temp\tmpa2dv9v93.pyomo.lp:1811: warning: upper bound of variable 'x8' redefined
+275 rows, 186 columns, 755 non-zeros
+180 integer variables, all of which are binary
+1991 lines were read
+Writing problem data to 'C:\Users\lucca\AppData\Local\Temp\tmp7u6845nw.glpk.glp'...
+1290 lines were written
+GLPK Integer Optimizer, v4.65
+275 rows, 186 columns, 755 non-zeros
+180 integer variables, all of which are binary
+Preprocessing...
+210 rows, 150 columns, 600 non-zeros
+150 integer variables, all of which are binary
+Scaling...
+ A: min|aij| =  1.000e+00  max|aij| =  1.000e+00  ratio =  1.000e+00
+Problem data seem to be well scaled
+Constructing initial basis...
+Size of triangular part is 110
+Solving LP relaxation...
+GLPK Simplex Optimizer, v4.65
+210 rows, 150 columns, 600 non-zeros
+      0: obj =   1.500000000e+01 inf =   2.200e+01 (14)
+      8: obj =   1.300000000e+01 inf =   0.000e+00 (0)
+*    45: obj =   3.500000000e+00 inf =   3.883e-14 (0)
+OPTIMAL LP SOLUTION FOUND
+Integer optimization begins...
+Long-step dual simplex will be used
++    45: mip =     not found yet >=              -inf        (1; 0)
++    59: >>>>>   4.000000000e+00 >=   4.000000000e+00 < 0.1% (4; 0)
++    59: mip =   4.000000000e+00 >=     tree is empty   0.0% (0; 7)
+INTEGER OPTIMAL SOLUTION FOUND
+Time used:   0.0 secs
+Memory used: 0.4 Mb (418180 bytes)
+Writing MIP solution to 'C:\Users\lucca\AppData\Local\Temp\tmptukqx0ob.glpk.raw'...
+470 lines were written
+
